@@ -213,12 +213,12 @@ for i in range(12):
         else:
             false_positive += 1
 
-accuracy = float(true_positive + true_negative) / (true_positive + true_negative + false_negative + false_positive)
-precision = float(true_positive) / (true_positive + false_positive)
-recall = float(true_positive) / (true_positive + false_negative)
-f1_score = float(2 * precision * recall) / (precision + recall)
+    accuracy = float(true_positive + true_negative) / (true_positive + true_negative + false_negative + false_positive)
+    precision = float(true_positive) / (true_positive + false_positive)
+    recall = float(true_positive) / (true_positive + false_negative)
+    f1_score = float(2 * precision * recall) / (precision + recall)
 
-print("Accuracy: ", round(accuracy, 2))
-print("Precision: ", round(precision, 2))
-print("Recall: ", round(recall, 2))
-print("F1 score: ", round(f1_score, 2))
+    print("Accuracy: ", round(accuracy, 2))
+    print("Precision: ", round(precision, 2))
+    print("Recall: ", round(recall, 2))
+    print("F1 score: ", round(f1_score, 2))
